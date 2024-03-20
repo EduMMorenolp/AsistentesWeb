@@ -13,11 +13,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
             var targetElement = document.querySelector(targetId);
 
-            var offset = targetElement.offsetTop - 140; 
+            var offset = targetElement.offsetTop - 140;
             window.scrollTo({
                 top: offset,
                 behavior: "smooth"
             });
+
         });
+    });
+});
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    var iconoMenu = document.querySelector('.menu-icon');
+    var menu = document.querySelector('.menu');
+
+    iconoMenu.addEventListener('click', function() {
+        menu.classList.toggle('responsive');
     });
 });

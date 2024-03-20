@@ -16,7 +16,8 @@
             <h1>AsistentesWeb</h1>
 
             <nav>
-                <ul>
+                <div class="menu-icon">&#9776;</div>
+                <ul class="menu">
                     <li><a href="#inicio">Inicio</a></li>
                     <li><a href="#servicios">Servicios</a></li>
                     <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
@@ -25,9 +26,12 @@
             </nav>
         </div>
         <form action="#" method="GET" class="search-form">
-            <input type="text" name="search" id="search" placeholder="Introduzca Texto..">
+            <input type="text" name="search" id="search" placeholder="Escribe aquí para buscar...">
+            
             <button type="submit">Buscar</button>
+        
         </form>
+        <div id="sugerencias"></div>
     </header>
 
     <main>
