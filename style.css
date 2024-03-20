@@ -27,7 +27,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background-image: url("/imag/Banner2.png");
+  background-image: url("/public/imag/Banner2.png");
   background-size: cover;
   background-position: center;
   border: 2px solid black;
