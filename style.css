@@ -27,7 +27,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background-image: url("home/public/imag/Banner2.png");
+  background-image: url("https://github.com/EduMMorenolp/AsistentesWeb/blob/master/public/imag/Banner2.png?raw=true");
   background-size: cover;
   background-position: center;
   border: 2px solid black;
