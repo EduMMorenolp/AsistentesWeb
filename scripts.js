@@ -21,10 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         });
     });
-});
 
-
-document.addEventListener('DOMContentLoaded', function() {
     var iconoMenu = document.querySelector('.menu-icon');
     var menu = document.querySelector('.menu');
 
