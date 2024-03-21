@@ -27,9 +27,9 @@
         </div>
         <form action="#" method="GET" class="search-form">
             <input type="text" name="search" id="search" placeholder="Escribe aquí para buscar...">
-            
+
             <button type="submit">Buscar</button>
-        
+
         </form>
         <div id="sugerencias"></div>
     </header>
@@ -90,6 +90,39 @@
         <p>Teléfono: +123456789</p>
     </footer>
 
+    <script>
+
+        console.log("Consola Asistentes Web")
+
+        document.addEventListener("DOMContentLoaded", function () {
+            var links = document.querySelectorAll("nav a");
+
+            links.forEach(function (link) {
+                link.addEventListener("click", function (event) {
+
+                    event.preventDefault();
+
+                    var targetId = link.getAttribute("href");
+
+                    var targetElement = document.querySelector(targetId);
+
+                    var offset = targetElement.offsetTop - 140;
+                    window.scrollTo({
+                        top: offset,
+                        behavior: "smooth"
+                    });
+
+                });
+            });
+
+            var iconoMenu = document.querySelector('.menu-icon');
+            var menu = document.querySelector('.menu');
+
+            iconoMenu.addEventListener('click', function () {
+                menu.classList.toggle('responsive');
+            });
+        });
+    </script>
 
 </body>
 
