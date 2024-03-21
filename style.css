@@ -7,40 +7,31 @@
 
 /* Estilos generales */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
-  color: #333;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: #eaddf1;
+  color: #2D272F;
   line-height: 1.6;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
 header {
-  background-color: #333;
-  color: #ffffff;
-  padding: 20px;
-  border-radius: 8px;
   position: sticky;
   top: 0;
   z-index: 1000;
-  background-image: url("https://github.com/EduMMorenolp/AsistentesWeb/blob/master/public/imag/Banner2.png?raw=true");
-  background-size: cover;
-  background-position: center;
-  border: 2px solid black;
-  box-shadow: 0px 2px 4px rgb(145, 143, 143);
 }
 
 .header {
   display: flex;
+  padding: 5px;
   justify-content: space-between;
   align-items: center;
-  background-color: #000000;
-  color: #e9e9e9;
+  background-image: linear-gradient(#040404 ,#CEB6D9);
+  color: #D9CEB6;
   border-radius: 10px;
+}
+
+header a {
+  text-decoration: none;
+  color: inherit;
 }
 
 nav ul {
@@ -53,10 +44,6 @@ nav ul li {
   margin-right: 20px;
 }
 
-nav ul li a {
-  color: #e9e9e9;
-  text-decoration: none;
-}
 nav ul li a:hover {
   transition: color 1s ease;
   color: yellow;
@@ -93,7 +80,7 @@ nav ul li a:hover {
 
 .menu li a {
   display: block;
-  color: white;
+  color: #D9CEB6;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -115,8 +102,9 @@ nav ul li a:hover {
   .menu.responsive {
     display: block;
     position: absolute;
-    right: 30px;
-    background-color: #000000;
+    top: 73px;
+    right: 7px;
+    background-image: linear-gradient(#CEB6D9, #040404);
     border-radius: 2px 2px 20px 20px;
   }
 
@@ -124,19 +112,16 @@ nav ul li a:hover {
     float: none;
   }
 
-  .menu.responsive li:last-child {
-    border-bottom: none;
+  .menu.responsive li a:hover {
+    border-radius: 5px;
+    border: 1px solid yellow;
+    animation: slideIn 0.6s ease forwards;
   }
 
   .menu.responsive li a {
     padding: 12px 35px;
   }
 }
-
-main {
-  padding: 20px;
-}
-
 /* Botton buscador */
 
 .search-form {
@@ -161,19 +146,45 @@ main {
 /* Footer Pie de pagina*/
 
 footer {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-image: linear-gradient(#CEB6D9, #040404);
+  color: #C1D9B6;
+  padding: 10px;
   text-align: center;
   border-radius: 8px;
 }
 
+.social-icon {
+  font-size: 34px;
+  margin-right: 10px;
+  color: black;
+}
+
+.facebook:hover {
+  color: #3b5998;
+}
+
+.instagram:hover {
+  color: #e4405f;
+}
+
+.linkedin:hover {
+  color: #0077b5; 
+}
+
+.whatsapp:hover {
+  color: #25d366;
+}
+
+
 /* Formulario Contacto */
 
 #contacto {
-  margin-top: 20px;
+  margin: 10px;
   padding: 20px;
-  background-color: #f9f9f9;
+  background-image: linear-gradient(#CEB6D9, #B6D9C0);
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -191,7 +202,8 @@ footer {
 #contacto input[type="text"],
 #contacto input[type="email"],
 #contacto input[type="tel"],
-#contacto textarea {
+#contacto textarea,
+#contacto select {
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
@@ -201,6 +213,8 @@ footer {
 }
 
 #contacto button {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
   padding: 10px 20px;
   background-color: #007bff;
   color: #fff;
@@ -211,4 +225,30 @@ footer {
 
 #contacto button:hover {
   background-color: #0056b3;
+}
+
+/* Estilos para INICIO - SERVICIOS - SOBRE NOSOTROS */
+
+#inicio {
+  margin: 10px;
+  padding: 20px;
+  background-image: linear-gradient(#CEB6D9, #D9B6D6);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#servicios {
+  margin: 10px;
+  padding: 20px;
+  background-image: linear-gradient(#CEB6D9, #D9CEB6);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#sobre-nosotros {
+  margin: 10px;
+  padding: 20px;
+  background-image: linear-gradient(#CEB6D9, #FFFFFF);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
