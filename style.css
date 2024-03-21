@@ -237,7 +237,10 @@ footer {
 }
 
 #servicios {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
   margin: 10px;
   padding: 20px;
   background-image: linear-gradient(#ceb6d9, #d9ceb6);
@@ -246,13 +249,13 @@ footer {
 }
 
 .servicios {
-  display: block;
   height: 55rem;
   width: 50rem;
   border-radius: 10px;
 }
 
 .servicio {
+  text-align: center;
   background-color: #d4cf9e;
   border: 3px solid black;
   border-radius: 30px;
@@ -278,14 +281,16 @@ footer {
 
 .referencias {
   display: flex;
-  margin-bottom: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
 .referencia {
   background-color: #d4cf9e;
   margin: 10px;
-  height: 18rem;
-  width: 20rem;
+  height: 25em;
+  width: 25em;
   border: 3px solid black;
   border-radius: 30px;
 }
@@ -293,12 +298,11 @@ footer {
 .referencia img {
   width: 100%;
   border-radius: 30px;
-  height: auto;
-  display: block;
   margin-bottom: 10px;
 }
 
 .referencia p {
+  width: 100%;
   font-size: 16px;
   color: #333;
   text-align: center;
