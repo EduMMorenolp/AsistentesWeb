@@ -7,9 +7,9 @@
 
 /* Estilos generales */
 body {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   background-color: #eaddf1;
-  color: #2D272F;
+  color: #2d272f;
   line-height: 1.6;
 }
 
@@ -24,8 +24,8 @@ header {
   padding: 5px;
   justify-content: space-between;
   align-items: center;
-  background-image: linear-gradient(#040404 ,#CEB6D9);
-  color: #D9CEB6;
+  background-image: linear-gradient(#040404, #ceb6d9);
+  color: #d9ceb6;
   border-radius: 10px;
 }
 
@@ -80,7 +80,7 @@ nav ul li a:hover {
 
 .menu li a {
   display: block;
-  color: #D9CEB6;
+  color: #d9ceb6;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -104,7 +104,7 @@ nav ul li a:hover {
     position: absolute;
     top: 73px;
     right: 7px;
-    background-image: linear-gradient(#CEB6D9, #040404);
+    background-image: linear-gradient(#ceb6d9, #040404);
     border-radius: 2px 2px 20px 20px;
   }
 
@@ -149,8 +149,8 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-image: linear-gradient(#CEB6D9, #040404);
-  color: #C1D9B6;
+  background-image: linear-gradient(#ceb6d9, #040404);
+  color: #c1d9b6;
   padding: 10px;
   text-align: center;
   border-radius: 8px;
@@ -171,20 +171,19 @@ footer {
 }
 
 .linkedin:hover {
-  color: #0077b5; 
+  color: #0077b5;
 }
 
 .whatsapp:hover {
   color: #25d366;
 }
 
-
 /* Formulario Contacto */
 
 #contacto {
   margin: 10px;
   padding: 20px;
-  background-image: linear-gradient(#CEB6D9, #B6D9C0);
+  background-image: linear-gradient(#ceb6d9, #b6d9c0);
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -213,7 +212,7 @@ footer {
 }
 
 #contacto button {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 20px;
   padding: 10px 20px;
   background-color: #007bff;
@@ -232,23 +231,75 @@ footer {
 #inicio {
   margin: 10px;
   padding: 20px;
-  background-image: linear-gradient(#CEB6D9, #D9B6D6);
+  background-image: linear-gradient(#ceb6d9, #d9b6d6);
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 #servicios {
+  display: block;
   margin: 10px;
   padding: 20px;
-  background-image: linear-gradient(#CEB6D9, #D9CEB6);
+  background-image: linear-gradient(#ceb6d9, #d9ceb6);
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.servicios {
+  display: block;
+  height: 55rem;
+  width: 50rem;
+  border-radius: 10px;
+}
+
+.servicio {
+  background-color: #d4cf9e;
+  border: 3px solid black;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+
 #sobre-nosotros {
   margin: 10px;
   padding: 20px;
-  background-image: linear-gradient(#CEB6D9, #FFFFFF);
+  background-image: linear-gradient(#ceb6d9, #ffffff);
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#referencias {
+  margin: 10px;
+  padding: 20px;
+  background-image: linear-gradient(#ceb6d9, #ffffff);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.referencias {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.referencia {
+  background-color: #d4cf9e;
+  margin: 10px;
+  height: 18rem;
+  width: 20rem;
+  border: 3px solid black;
+  border-radius: 30px;
+}
+
+.referencia img {
+  width: 100%;
+  border-radius: 30px;
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.referencia p {
+  font-size: 16px;
+  color: #333;
+  text-align: center;
 }
