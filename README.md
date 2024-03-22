@@ -38,8 +38,9 @@ AsistentesWeb es un sitio web diseñado para ayudar a los desarrolladores web a 
 
 ## Instrucciones de Uso
 
-1. Clona este repositorio: `git clone https://github.com/tu_usuario/AsistentesWeb.git`
+1. Clona este repositorio: `git clone https://github.com/EduMMorenolp/AsistentesWeb.git`
 2. Abre el archivo `index.html` en tu navegador web.
+
 
 ## Contribución
 
