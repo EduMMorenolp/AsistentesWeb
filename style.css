@@ -38,19 +38,14 @@ header a {
 
 /* NAVBAR */
 
-nav ul {
-  list-style-type: none;
-  text-align: end;
-}
-
 nav ul li {
   display: inline;
   margin-right: 20px;
 }
 
 nav ul li a:hover {
+  color: #7b7c24;
   transition: color 1s ease;
-  color: #32274e;
   box-shadow: 1px 1px 2px #32274e;
   border-radius: 10px;
 }
@@ -72,14 +67,6 @@ nav ul li a:hover {
   }
 }
 
-.menu {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  animation: slideIn 1s ease forwards;
-}
-
 .menu li {
   float: left;
 }
@@ -95,7 +82,7 @@ nav ul li a:hover {
 /* Estilos para el menú de navegación en pantalla pequeña 
     MENU DESPEGABLE 
 */
-@media only screen and (max-width: 850px) {
+@media all and (max-width: 850px) {
   .menu {
     display: none;
     animation: slideIn 0.6s ease forwards;
@@ -329,4 +316,42 @@ footer {
 
 .whatsapp:hover {
   color: #25d366;
+}
+
+.github:hover {
+  color: black;
+}
+
+/* Sobre Nosotros */
+
+.nosotros {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  color: #32270E;
+  flex-wrap: wrap;
+}
+
+.persona {
+  padding: 5px;
+  border: 1px solid rgb(136, 136, 39);
+  border-radius: 15%;
+  box-shadow: 2px 2px #cbd44b;
+  background-color: #d4d3c8c7;
+  transition: transform 0.3s ease;
+}
+
+.persona:hover {
+  transform: scale(1.03);
+}
+
+.redes {
+  display: flex;
+  justify-content: space-around;
+}
+
+.persona img {
+  width: 200px;
+  border-radius: 100px;
 }
