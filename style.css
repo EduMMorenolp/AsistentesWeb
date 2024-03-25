@@ -107,6 +107,7 @@ nav ul li a:hover {
     float: none;
   }
 
+  /** Implementacion de animación **/
   .menu.responsive li a:hover {
     border-radius: 5px;
     border: 1px solid #32274e;
@@ -290,8 +291,11 @@ nav ul li a:hover {
   margin-bottom: 10px;
 }
 
+/** Estructura HTML maquetada con Grid **/
 .redsocial-options {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px;
   margin-bottom: 10px;
 }
 
@@ -395,6 +399,8 @@ footer {
   width: 200px;
   border-radius: 100px;
 }
+
+/** Página totalmente responsive con mínimo 3 puntos de corte con media querys para 3 tamaños de dispositivos (PC escritorio, Tablet, Celular). **/ 
 
 /* Pantalla grande (escritorio): */
 @media all and (min-width: 1024px) {
