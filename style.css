@@ -210,7 +210,7 @@ nav ul li a:hover {
   align-items: center;
   text-align: center;
   justify-content: space-around;
-  color: #32270E;
+  color: #32270e;
   flex-wrap: wrap;
 }
 
@@ -319,7 +319,7 @@ nav ul li a:hover {
 }
 
 .redsocial-option input[type="radio"]:checked + .redsocial-label {
-  background-color: #b8a3e4; 
+  background-color: #b8a3e4;
   border-color: #b410e6;
 }
 
@@ -394,4 +394,23 @@ footer {
 .persona img {
   width: 200px;
   border-radius: 100px;
+}
+
+/* Pantalla grande (escritorio): */
+@media all and (min-width: 1024px) {
+  body {
+    font-size: 1.2em;
+  }
+}
+/* Pantalla mediana (tabletas): */
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  body {
+    font-size: 1.1em;
+  }
+}
+/* Pantalla pequeña (teléfonos): */
+@media all and (max-width: 767px) {
+  body {
+    font-size: 1.2em;
+  }
 }
