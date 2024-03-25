@@ -173,8 +173,8 @@ nav ul li a:hover {
 }
 
 .servicios {
-  height: 55rem;
-  width: 50rem;
+  height: 100%;
+  width: 100%;
   border-radius: 10px;
 }
 
@@ -217,7 +217,7 @@ nav ul li a:hover {
 .referencia {
   background-color: #e3e1f3;
   margin: 10px;
-  width: 25em;
+  width: 20em;
   border: 3px solid #4f3d75;
   border-radius: 30px;
 }
@@ -228,6 +228,7 @@ nav ul li a:hover {
 }
 
 .referencia p {
+  height: 5em;
   width: 100%;
   font-size: 16px;
   color: #32274e;
@@ -237,7 +238,7 @@ nav ul li a:hover {
 /* CONTACTO - Formulario Contacto */
 
 #contacto {
-  width: 900px;
+  width: 80%;
   margin: 20px auto;
   padding: 20px;
   background-image: linear-gradient(#cdc8ea, #b2a9dc);
@@ -282,6 +283,44 @@ nav ul li a:hover {
 
 #contacto button:hover {
   background-color: #32274e;
+}
+
+.redsocial h3 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.redsocial-options {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.redsocial-option {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.redsocial-option:last-child {
+  margin-right: 0;
+}
+
+.redsocial-option input[type="radio"] {
+  display: none; /* Ocultar los radio buttons por defecto */
+}
+
+.redsocial-label {
+  display: block;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.redsocial-option input[type="radio"]:checked + .redsocial-label {
+  background-color: #b8a3e4; 
+  border-color: #b410e6;
 }
 
 /* FOOTER - Pie de pagina*/
@@ -330,7 +369,7 @@ footer {
   align-items: center;
   text-align: center;
   justify-content: space-evenly;
-  color: #32270E;
+  color: #32270e;
   flex-wrap: wrap;
 }
 
