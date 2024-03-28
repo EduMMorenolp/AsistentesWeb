@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -142,24 +142,19 @@
             <div class="referencias">
                 <div class="referencia">
                     <img src="./public/imag/Clientes/cliente4.png" alt="Cliente 4">
-                    <p>Lorem ipsum dolor sit amet, consectetur adi <spam style="font-weight: bold;">Imagen creada con IA
-                        </spam> leo et lacus hendrerit.</p>
+                    <p id="texto-escrito-1"></p>
                 </div>
                 <div class="referencia">
                     <img src="./public/imag/Clientes/cliente2.png" alt="Cliente 2">
-                    <p>Integer ut turpis condimentum,<spam style="font-weight: bold;">Imagen creada con IA</spam>
-                        scelerisque risus sed, tempus tellus.</p>
+                    <p id="texto-escrito-2"></p>
                 </div>
                 <div class="referencia">
                     <img src="./public/imag/Clientes/cliente1.png" alt="Cliente 1">
-                    <p>Vestibulum vel risus nec elit consequat eleifend.<spam style="font-weight: bold;">Imagen creada
-                            con IA</spam>
-                    </p>
+                    <p id="texto-escrito-3"></p>
                 </div>
                 <div class="referencia">
                     <img src="./public/imag/Clientes/cliente3.png" alt="Cliente 3">
-                    <p>Sed et leo et <spam style="font-weight: bold;">Imagen creada con IA</spam>.Vestibulum vel risus
-                        nec elit consequat eleifend.</p>
+                    <p id="texto-escrito-4"></p>
                 </div>
             </div>
         </section>
@@ -173,7 +168,7 @@
             </div>
         </section>
 
-
+        <!-- FORMULARIO DE CONTACTO -->
         <section id="contacto">
             <h2>Contacto</h2>
             <p>¡Contáctanos para comenzar tu próximo proyecto web! Estamos aquí para responder tus preguntas y ofrecerte
@@ -198,8 +193,30 @@
                     <option value="marketing">Marketing</option>
                     <option value="optimizacion">Optimización de sitios</option>
                     <option value="consulta">Otra Consulta</option>
-
                 </select>
+                <div class="redsocial">
+                    <h3>¿Con qué red social nos conociste?</h3>
+                    <div class="redsocial-options">
+                        <div class="redsocial-option">
+                            <input type="radio" id="facebook" name="red-social" value="Facebook">
+                            <label class="redsocial-label" for="facebook">Facebook</label>
+                        </div>
+                        <div class="redsocial-option">
+                            <input type="radio" id="twitter" name="red-social" value="Twitter">
+                            <label class="redsocial-label" for="twitter">Twitter</label>
+                        </div>
+                    </div>
+                    <div class="redsocial-options">
+                        <div class="redsocial-option">
+                            <input type="radio" id="instagram" name="red-social" value="Instagram">
+                            <label class="redsocial-label" for="instagram">Instagram</label>
+                        </div>
+                        <div class="redsocial-option">
+                            <input type="radio" id="linkedin" name="red-social" value="LinkedIn">
+                            <label class="redsocial-label" for="linkedin">LinkedIn</label>
+                        </div>
+                    </div>
+                </div>
 
                 <button type="submit">Enviar</button>
             </form>
@@ -228,7 +245,7 @@
     <script>
 
         console.log("Consola Asistentes Web")
-        console.log("Truquito Preciona : '↑', '→', '→', '↑', '←' ")
+        console.log("Truquito de PC : '↑', '→', '→', '↑', '←' ")
         // Navbar
         document.addEventListener("DOMContentLoaded", function () {
             var links = document.querySelectorAll("nav a");
@@ -258,7 +275,7 @@
                 menu.classList.toggle('responsive');
             });
         });
-        
+
         // MisterEgg
         var secuenciaDeseada = ['ArrowUp', 'ArrowRight', 'ArrowRight', 'ArrowUp', 'ArrowLeft'];
         var teclasPresionadas = [];
@@ -302,8 +319,26 @@
             contenedorNosotros.innerHTML += personaHTML;
         });
 
+        /* Efecto de escritura */
+        const textos = [
+            "Lorem ipsum dolor sit amet, consectetur adi Imagen creada con IA",
+            "Integer ut turpis condimentum,Imagen creada con IA scelerisque risus sed, tempus tellus.",
+            "Vestibulum vel risus nec elit consequat eleifend.Imagen creada con IA",
+            "Sed et leo et Imagen creada con IA.Vestibulum vel risus nec elit consequat eleifend."
+        ];
+        const intervalo = 100; // milisegundos
+
+        function escribirTexto(index, elementos) {
+            if (index < textos[elementos].length) {
+                document.getElementById(`texto-escrito-${elementos + 1}`).textContent += textos[elementos][index];
+                setTimeout(() => escribirTexto(index + 1, elementos), intervalo);
+            }
+        }
+
+        for (let i = 0; i < textos.length; i++) {
+            escribirTexto(0, i);
+        }
+
     </script>
-
 </body>
-
 </html>

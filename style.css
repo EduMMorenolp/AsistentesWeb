@@ -107,6 +107,7 @@ nav ul li a:hover {
     float: none;
   }
 
+  /** Implementacion de animación **/
   .menu.responsive li a:hover {
     border-radius: 5px;
     border: 1px solid #32274e;
@@ -238,14 +239,14 @@ nav ul li a:hover {
   align-items: center;
   text-align: center;
   justify-content: space-around;
-  color: #32270E;
+  color: #32270e;
   flex-wrap: wrap;
 }
 
 .referencia {
   background-color: #e3e1f3;
   margin: 10px;
-  width: 25em;
+  width: 20em;
   border: 3px solid #4f3d75;
   border-radius: 30px;
 }
@@ -256,6 +257,7 @@ nav ul li a:hover {
 }
 
 .referencia p {
+  height: 5em;
   width: 100%;
   font-size: 16px;
   color: #32274e;
@@ -265,7 +267,7 @@ nav ul li a:hover {
 /* CONTACTO - Formulario Contacto */
 
 #contacto {
-  width: 900px;
+  width: 80%;
   margin: 20px auto;
   padding: 20px;
   background-image: linear-gradient(#cdc8ea, #b2a9dc);
@@ -310,6 +312,47 @@ nav ul li a:hover {
 
 #contacto button:hover {
   background-color: #32274e;
+}
+
+.redsocial h3 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/** Estructura HTML maquetada con Grid **/
+.redsocial-options {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.redsocial-option {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.redsocial-option:last-child {
+  margin-right: 0;
+}
+
+.redsocial-option input[type="radio"] {
+  display: none; /* Ocultar los radio buttons por defecto */
+}
+
+.redsocial-label {
+  display: block;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.redsocial-option input[type="radio"]:checked + .redsocial-label {
+  background-color: #b8a3e4;
+  border-color: #b410e6;
 }
 
 /* FOOTER - Pie de pagina*/
@@ -358,7 +401,7 @@ footer {
   align-items: center;
   text-align: center;
   justify-content: space-evenly;
-  color: #32270E;
+  color: #32270e;
   flex-wrap: wrap;
 }
 
@@ -383,4 +426,25 @@ footer {
 .persona img {
   width: 200px;
   border-radius: 100px;
+}
+
+/** Página totalmente responsive con mínimo 3 puntos de corte con media querys para 3 tamaños de dispositivos (PC escritorio, Tablet, Celular). **/ 
+
+/* Pantalla grande (escritorio): */
+@media all and (min-width: 1024px) {
+  body {
+    font-size: 1.2em;
+  }
+}
+/* Pantalla mediana (tabletas): */
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  body {
+    font-size: 1.1em;
+  }
+}
+/* Pantalla pequeña (teléfonos): */
+@media all and (max-width: 767px) {
+  body {
+    font-size: 1.2em;
+  }
 }
